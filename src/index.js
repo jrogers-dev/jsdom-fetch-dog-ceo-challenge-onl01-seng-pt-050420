@@ -12,7 +12,9 @@ document.addEventListener(
       })
       .then(function(data) {
         data.message.forEach(function(item) {
-          imageArray.push(item);
+          let image = document.createElement("IMG");
+          image.innerHtml = item;
+          imageContainer.appendChild(image);
         }) 
       })
     ;
