@@ -13,7 +13,7 @@ document.addEventListener(
       .then(function(data) {
         data.message.forEach(function(item) {
           let image = document.createElement("IMG");
-          image.innerHtml = item;
+          image.src = item;
           imageContainer.appendChild(image);
         }) 
       })
