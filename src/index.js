@@ -35,7 +35,7 @@ document.addEventListener(
             "click",
             function(e) {
             
-            self.color = red;
+            breed.font;
           });
         }
       })
