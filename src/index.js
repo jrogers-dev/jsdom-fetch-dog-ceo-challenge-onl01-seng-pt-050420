@@ -45,7 +45,10 @@ document.addEventListener(
     breedDropdown.addEventListener(
       "change",
       function(e) {
-        console.log(breedDropdown.value);
+        breedContainer.forEach(function(item) {
+          item.hidden = true;
+        }
+      );
       }
     );
   }
