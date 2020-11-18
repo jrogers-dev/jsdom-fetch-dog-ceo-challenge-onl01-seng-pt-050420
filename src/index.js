@@ -10,7 +10,7 @@ document.addEventListener(
         return response.json();
       })
       .then(function(data) {
-        data.message
+        data.message.forEach() 
       })
     ;
   }
