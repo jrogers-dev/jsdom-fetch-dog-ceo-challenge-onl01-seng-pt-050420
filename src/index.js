@@ -28,7 +28,7 @@ document.addEventListener(
       })
       .then(function(data) {
         for(var key in data.message) {
-          console.log(data.message[key]);
+          console.log(key);
         }
       })
     ;
