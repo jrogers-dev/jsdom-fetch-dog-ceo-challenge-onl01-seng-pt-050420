@@ -6,7 +6,7 @@ document.addEventListener(
   "DOMContentLoaded", 
   function(e) {
     let imageContainer = document.getElementById("dog-image-container");
-    let breedContainer = document.getElementById("breed-container");
+    let breedContainer = document.getElementById("dog-breeds");
     
     fetch(imgUrl)
       .then(function(response) {
@@ -18,7 +18,7 @@ document.addEventListener(
           image.src = item;
           imageContainer.appendChild(image);
           imageContainer.appendChild(document.createElement("BR"));
-        }) 
+        }); 
       })
     ;
     
@@ -28,11 +28,10 @@ document.addEventListener(
       })
       .then(function(data) {
         data.message.forEach(function(item) {
-          let image = document.createElement("IMG");
-          image.src = item;
-          imageContainer.appendChild(image);
-          imageContainer.appendChild(document.createElement("BR"));
-        }) 
+          let breed = document.createElement("LI");
+          breen.innerText = item;
+          breedContainer.appendChild(breed);
+        }); 
       })
     ;
   }
