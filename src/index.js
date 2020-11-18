@@ -29,7 +29,7 @@ document.addEventListener(
       .then(function(data) {
         for(var key in data.message) {
           let breed = document.createElement("LI");
-          breen.innerText = key;
+          breed.innerText = key;
           breedContainer.appendChild(breed);
         }
       })
