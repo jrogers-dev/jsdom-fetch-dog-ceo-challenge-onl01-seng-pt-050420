@@ -6,6 +6,7 @@ document.addEventListener(
   "DOMContentLoaded", 
   function(e) {
     let imageContainer = document.getElementById("dog-image-container");
+    let breedContainer = document.getElementById("breed-container");
     
     fetch(imgUrl)
       .then(function(response) {
