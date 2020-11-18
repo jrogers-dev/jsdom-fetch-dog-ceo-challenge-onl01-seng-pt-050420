@@ -42,6 +42,7 @@ document.addEventListener(
       })
     ;
     
-    
+    breedDropdown.addEventListener(
+      "change")
   }
 );
