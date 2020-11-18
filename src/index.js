@@ -47,7 +47,7 @@ document.addEventListener(
       function(e) {
         let breeds = breedContainer.children;
         for(let i = 0; i < breeds.length; i++) {
-          breeds[i].style.display = none;
+          breeds[i].style.display = "none";
         }
       }
     );
