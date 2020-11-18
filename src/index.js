@@ -15,6 +15,7 @@ document.addEventListener(
           let image = document.createElement("IMG");
           image.src = item;
           imageContainer.appendChild(image);
+          imageContainer.appendChild(document.createElement("BR"));
         }) 
       })
     ;
