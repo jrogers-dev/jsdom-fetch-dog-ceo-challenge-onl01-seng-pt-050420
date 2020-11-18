@@ -7,6 +7,7 @@ document.addEventListener(
   function(e) {
     let imageContainer = document.getElementById("dog-image-container");
     let breedContainer = document.getElementById("dog-breeds");
+    let breedDropdown = document.getElementById("");
     
     fetch(imgUrl)
       .then(function(response) {
@@ -40,5 +41,7 @@ document.addEventListener(
         }
       })
     ;
+    
+    
   }
 );
