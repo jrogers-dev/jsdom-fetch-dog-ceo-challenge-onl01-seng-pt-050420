@@ -9,7 +9,7 @@ document.addEventListener(
         return response.json();
       })
       .then(function(data) {
-        console.log(data[0]);
+        console.log(data.message[0]);
       })
     ;
   }
