@@ -38,6 +38,7 @@ document.addEventListener(
             
             breed.style.color = "blue";
           });
+          hideBreeds();
         }
       })
     ;
