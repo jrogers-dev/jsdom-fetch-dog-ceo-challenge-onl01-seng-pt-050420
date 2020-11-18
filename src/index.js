@@ -1,5 +1,6 @@
 console.log('%c HI', 'color: firebrick');
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
+let imageArray = [];
 
 document.addEventListener(
   "DOMContentLoaded", 
@@ -9,7 +10,7 @@ document.addEventListener(
         return response.json();
       })
       .then(function(data) {
-        console.log(data.message[0]);
+        data.message
       })
     ;
   }
