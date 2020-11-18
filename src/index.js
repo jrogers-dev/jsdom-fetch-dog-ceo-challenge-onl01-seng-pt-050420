@@ -5,6 +5,10 @@ let imageArray = [];
 document.addEventListener(
   "DOMContentLoaded", 
   function(e) {
+    let imageContainer = document.getElementById()
+    
+    
+    
     fetch(imgUrl)
       .then(function(response) {
         return response.json();
