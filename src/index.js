@@ -27,11 +27,7 @@ document.addEventListener(
         return response.json();
       })
       .then(function(data) {
-        data.message.forEach(function(item) {
-          let breed = document.createElement("LI");
-          breen.innerText = item;
-          breedContainer.appendChild(breed);
-        }); 
+        console.log(data);
       })
     ;
   }
