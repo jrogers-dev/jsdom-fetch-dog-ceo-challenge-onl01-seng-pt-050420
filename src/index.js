@@ -43,6 +43,10 @@ document.addEventListener(
     ;
     
     breedDropdown.addEventListener(
-      "change")
+      "change",
+      function(e) {
+        console.log(breedDropdown.value);
+      }
+    );
   }
 );
