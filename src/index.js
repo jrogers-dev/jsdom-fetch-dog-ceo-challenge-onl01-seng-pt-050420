@@ -10,7 +10,9 @@ document.addEventListener(
         return response.json();
       })
       .then(function(data) {
-        data.message.forEach() 
+        data.message.forEach(function(item) {
+          imageArray.push(item);
+        }) 
       })
     ;
   }
