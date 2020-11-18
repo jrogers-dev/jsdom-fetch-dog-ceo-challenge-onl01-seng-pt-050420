@@ -49,6 +49,8 @@ document.addEventListener(
         for(let i = 0; i < breeds.length; i++) {
           if(breeds[i].innerText.slice(0,1) !== breedDropdown.value ) {
             breeds[i].style.display = "none";
+          } else {
+            breeds[i].style.display = "block";
           }
         }
       }
