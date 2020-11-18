@@ -27,7 +27,9 @@ document.addEventListener(
         return response.json();
       })
       .then(function(data) {
-        fordata.message;
+        for(var key in data.message) {
+          console.log(data.message.key);
+        }
       })
     ;
   }
