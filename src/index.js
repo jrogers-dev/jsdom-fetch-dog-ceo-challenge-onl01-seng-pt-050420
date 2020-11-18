@@ -4,17 +4,11 @@ const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 document.addEventListener(
   "DOMContentLoaded", 
   function(e) {
-    console.log(fetchImages(imgUrl));
+    console.log(fetch(url)
+      .then(function(response) {
+          return response.json();
+        }
+      )
+    );
   }
 );
-
-function fetchImages(url) {
-  let box = fetch(url)
-    .then(function(response) {
-      return response.json();
-      }
-    )
-  ;
-  
-  return box.message;
-}
