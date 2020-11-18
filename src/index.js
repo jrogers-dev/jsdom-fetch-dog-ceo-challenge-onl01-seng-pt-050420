@@ -20,5 +20,19 @@ document.addEventListener(
         }) 
       })
     ;
+    
+    fetch(breedUrl)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(data) {
+        data.message.forEach(function(item) {
+          let image = document.createElement("IMG");
+          image.src = item;
+          imageContainer.appendChild(image);
+          imageContainer.appendChild(document.createElement("BR"));
+        }) 
+      })
+    ;
   }
 );
