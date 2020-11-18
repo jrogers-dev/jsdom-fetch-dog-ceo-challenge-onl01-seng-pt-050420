@@ -31,6 +31,12 @@ document.addEventListener(
           let breed = document.createElement("LI");
           breed.innerText = key;
           breedContainer.appendChild(breed);
+          breed.addEventListener(
+            "click",
+            function(e) {
+            
+            self.color = red;
+          });
         }
       })
     ;
