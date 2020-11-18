@@ -35,7 +35,7 @@ document.addEventListener(
             "click",
             function(e) {
             
-            breed.style.
+            breed.style.color = "blue";
           });
         }
       })
