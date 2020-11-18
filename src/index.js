@@ -1,13 +1,16 @@
 console.log('%c HI', 'color: firebrick');
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 const breedUrl = "https://dog.ceo/api/breeds/list/all";
+imageContainer;
+breedContainer;
+breedDropdown;
 
 document.addEventListener(
   "DOMContentLoaded", 
   function(e) {
-    let imageContainer = document.getElementById("dog-image-container");
-    let breedContainer = document.getElementById("dog-breeds");
-    let breedDropdown = document.getElementById("breed-dropdown");
+    imageContainer = document.getElementById("dog-image-container");
+    breedContainer = document.getElementById("dog-breeds");
+    breedDropdown = document.getElementById("breed-dropdown");
     
     fetch(imgUrl)
       .then(function(response) {
