@@ -28,7 +28,9 @@ document.addEventListener(
       })
       .then(function(data) {
         for(var key in data.message) {
-          console.log(key);
+          let breed = document.createElement("LI");
+          breen.innerText = key;
+          breedContainer.appendChild(breed);
         }
       })
     ;
