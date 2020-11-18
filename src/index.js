@@ -4,7 +4,7 @@ const imgUrl = "https://dog.ceo/api/breeds/image/random/4";
 document.addEventListener(
   "DOMContentLoaded", 
   function(e) {
-    console.log(fetch(url)
+    console.log(fetch(imgUrl)
       .then(function(response) {
           return response.json();
         }
