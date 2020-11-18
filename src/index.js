@@ -15,6 +15,5 @@ document.addEventListener(
         }) 
       })
     ;
-    console.log(imageArray);
   }
 );
