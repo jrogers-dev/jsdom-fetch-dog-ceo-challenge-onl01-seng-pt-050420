@@ -47,7 +47,9 @@ document.addEventListener(
       function(e) {
         let breeds = breedContainer.children;
         for(let i = 0; i < breeds.length; i++) {
-          breeds[i].style.display = "none";
+          if(breeds[i].innerText.[0] === breedDropdown.value ) {
+            breeds[i].style.display = "none";
+          }
         }
       }
     );
