@@ -7,7 +7,7 @@ document.addEventListener(
   function(e) {
     let imageContainer = document.getElementById("dog-image-container");
     let breedContainer = document.getElementById("dog-breeds");
-    let breedDropdown = document.getElementById("");
+    let breedDropdown = document.getElementById("breed-dropdown");
     
     fetch(imgUrl)
       .then(function(response) {
