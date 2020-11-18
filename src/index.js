@@ -47,8 +47,8 @@ document.addEventListener(
       function(e) {
         breedContainer.forEach(function(item) {
           item.hidden = true;
-        }
-      );
+          }
+        );
       }
     );
   }
